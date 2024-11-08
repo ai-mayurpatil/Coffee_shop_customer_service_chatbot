@@ -8,3 +8,12 @@ The goal of this project is to create a smart, **agent-based chatbot** that can:
 * Provide personalized product recommendations through a **market basket analysis recommendation engine**.
 * Guide customers through a seamless order process, ensuring accurate and structured order details.
 * Block irrelevant or harmful queries using a Guard Agent for safe and relevant interactions.
+
+## 🔧 What You Learn
+Through this project, you will gain hands-on experience in:
+* Deploying your personal LLM with RunPod
+* Deploying an agent-based system with specialized agents like Order Taking, Details, and Guard agents.
+* Setting up a vector database for storing coffee shop menu and product information.
+* Implementing Retrieval-Augmented Generation (RAG) for detailed and accurate responses.
+* Training and deploying a recommendation engine.
+* Building a React Native app that integrates this powerful chatbot.
