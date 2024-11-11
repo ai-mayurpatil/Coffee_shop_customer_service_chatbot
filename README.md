@@ -29,3 +29,16 @@ Powered by a Retrieval-Augmented Generation (RAG) system, the Details Agent answ
 This agent handles personalized product recommendations by working with the market basket recommendation engine. Triggered by the Order Taking Agent, it analyzes the user's current order or preferences and suggests complementary items. This agent aims to boost upselling opportunities or help users discover new products they might like.
 5. **Classification Agent:**
 This is the decision-making agent. It classifies incoming user queries and determines which agent is best suited to handle the task. By categorizing user intents, it ensures that queries are routed efficiently, whether the user is asking for recommendations, placing an order, or inquiring about specific menu details.
+
+### ⚙️ How the Agents Work Together
+The agents work collaboratively in a pipeline architecture to process user inputs:
+
+1. A customer query is received and first assessed by the Guard Agent.
+2. If valid, the Classification Agent determines the intent behind the user query (e.g., placing an order, asking about a product, or requesting a recommendation).
+3. The query is then forwarded to the appropriate agent:
+    * The Order Taking Agent handles order-related queries.
+        * Order Agent can forward the order to the recommendation agent to try and upsell the user near the end of their order.
+    * The Details Agent fetches specific menu information.
+    * The Recommendation Agent suggests complementary products.
+
+
